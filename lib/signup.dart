@@ -6,6 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_app/authprovider.dart';
 
 import 'DatabseExample.dart';
+import 'MainPage.dart';
 
 class Signup extends StatelessWidget {
   const Signup({Key key}) : super(key: key);
@@ -210,7 +211,7 @@ SizedBox(height:25),
                     }else{
                      Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => D()),
+                              MaterialPageRoute(builder: (context) => MainPage()),
                               );
 
                   }

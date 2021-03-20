@@ -7,6 +7,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_app/authprovider.dart';
 
 import 'DatabseExample.dart';
+import 'MainPage.dart';
 
 class Login extends StatelessWidget {
   const Login({Key key}) : super(key: key);
@@ -173,7 +174,7 @@ class _LoginPageState extends State<LoginPage> {
                   }else{
                      Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => D()),
+                              MaterialPageRoute(builder: (context) => MainPage()),
                               );
 
                   }
