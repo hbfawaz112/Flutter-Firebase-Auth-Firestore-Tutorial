@@ -3,9 +3,9 @@
 ### A flutter application that connected to firebase to authenticate users with email and password and with google account , plus Firestore database crud operations.
 
 ### Screenshots
-  ![s1](https://raw.githubusercontent.com/hbfawaz112/Flutter-Firebase-Auth-Firestore-Tutorial/master/screenshots/screen1.PNG)
+  ![s1](https://raw.githubusercontent.com/hbfawaz112/Flutter-Firebase-Auth-Firestore-Tutorial/master/screenshots/ss1.PNG)
   
-  ![s2](https://raw.githubusercontent.com/hbfawaz112/Flutter-Firebase-Auth-Firestore-Tutorial/master/screenshots/screen2.PNG)
+  ![s2](https://raw.githubusercontent.com/hbfawaz112/Flutter-Firebase-Auth-Firestore-Tutorial/master/screenshots/ss2.PNG)
   
 
 
