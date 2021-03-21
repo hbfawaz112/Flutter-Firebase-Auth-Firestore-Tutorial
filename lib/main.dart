@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             
             Container(
-              padding: EdgeInsets.only(top:200 , left: 30),
+              padding: EdgeInsets.only(top:100 , left: 30),
               child : Text("Welcome To      Firebase Tutorial." , style: TextStyle(fontSize: 45.0 , fontWeight: FontWeight.w900 , color: Colors.white),),
               
             ),

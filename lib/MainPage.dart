@@ -1,3 +1,4 @@
+import 'package:firebase_app/RealTimeDatabaseExample.dart';
 import 'package:firebase_app/todos.dart';
 import 'package:flutter/material.dart';
 import 'package:matcher/matcher.dart';
@@ -47,7 +48,7 @@ class _GridLayoutState extends State<GridLayout> {
   Widget build(BuildContext context) {
     return Center(
       child: ListView(children: [
-        SizedBox(height:140),
+        SizedBox(height:120),
 
          InkWell(
 
@@ -62,7 +63,7 @@ class _GridLayoutState extends State<GridLayout> {
                      elevation: 20,
                 child:
                 Container(
-                    padding:EdgeInsets.all(40),
+                    padding:EdgeInsets.all(15),
 
                     child:new Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,7 +92,7 @@ class _GridLayoutState extends State<GridLayout> {
                      elevation: 20,
                 child:
                 Container(
-                    padding:EdgeInsets.all(40),
+                    padding:EdgeInsets.all(15),
 
                     child:new Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,7 +120,7 @@ class _GridLayoutState extends State<GridLayout> {
                      elevation: 20,
                 child:
                 Container(
-                    padding:EdgeInsets.all(40),
+                    padding:EdgeInsets.all(15),
 
                     child:new Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,6 +128,33 @@ class _GridLayoutState extends State<GridLayout> {
                           Center(child:Text("Firestore DB",style: TextStyle(fontSize:30,fontWeight:FontWeight.w900,color : Colors.white),)),
 
                           Center(child:Text("TodoList Insert-Delete ",style: TextStyle(color: Colors.white, fontSize:22,fontWeight:FontWeight.w900))),
+
+                        ]
+                    )
+                )
+            ),
+         ), 
+          InkWell(
+
+           onTap: (){
+                  Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => D2()),
+                              );
+           },
+                    child: Card(
+                      color: Colors.grey,
+                     elevation: 20,
+                child:
+                Container(
+                    padding:EdgeInsets.all(15),
+
+                    child:new Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:<Widget>[
+                          Center(child:Text("RealTime DB",style: TextStyle(fontSize:30,fontWeight:FontWeight.w900,color : Colors.white),)),
+
+                          Center(child:Text("Some Crud Operations",style: TextStyle(color: Colors.white, fontSize:22,fontWeight:FontWeight.w900))),
 
                         ]
                     )
