@@ -46,84 +46,98 @@ class _GridLayoutState extends State<GridLayout> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child:Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      child: ListView(children: [
+        SizedBox(height:140),
 
-        TextButton(
-            onPressed: () {
-              Navigator.push(
+         InkWell(
+
+           onTap: (){
+                  Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) => D()),
                               );
+           },
+                    child: Card(
+                      color: Colors.purpleAccent,
+                     elevation: 20,
+                child:
+                Container(
+                    padding:EdgeInsets.all(40),
 
-            },
-            child: Column(
-              children: [
-                Text(
-                  'Firestore DB\nCrud ListView',
-                ),
-                SizedBox(height: 30),
-              ],
+                    child:new Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:<Widget>[
+                          Center(child:Text("Firestore DB",style: TextStyle(fontSize:30,fontWeight:FontWeight.w900,color : Colors.white),)),
+
+                          Center(child:Text("Crud Operations ListView ",style: TextStyle(color:Colors.white,fontSize:22,fontWeight:FontWeight.w900))),
+
+                        ]
+                    )
+                )
             ),
-            style: TextButton.styleFrom(
-                primary: Colors.white,
-                backgroundColor: Colors.purpleAccent,
-                textStyle: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-          ),
-            SizedBox(height: 40,),
-            TextButton(
-            onPressed: () {
+         ),
 
-              
-              Navigator.push(
+
+          InkWell(
+
+           onTap: (){
+                      Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) => D1()),
                               );
-                              
+           },
+                    child: Card(
+                      color: Colors.grey,
+                     elevation: 20,
+                child:
+                Container(
+                    padding:EdgeInsets.all(40),
 
-            },
-            child: 
-              Column(
-                children: [
-                  Text(
-                  'Firestore DB\nCrud DataTable',
-                 ),
-                  SizedBox(height: 30),
-                ],
-              ),
-            style: TextButton.styleFrom(
-                primary: Colors.white,
-                backgroundColor: Colors.grey,
-                textStyle: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-          ),
-            SizedBox(height: 40,),
-            TextButton(
-            onPressed: () {
-              
-              Navigator.push(
+                    child:new Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:<Widget>[
+                          Center(child:Text("Firestore DB",style: TextStyle(fontSize:30,fontWeight:FontWeight.w900,color : Colors.white),)),
+
+                          Center(child:Text("Crud Operations Data Table",style: TextStyle(color: Colors.white,fontSize:22,fontWeight:FontWeight.w900))),
+
+                        ]
+                    )
+                )
+            ),
+         ),
+
+          InkWell(
+
+           onTap: (){
+                  Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) => Todos()),
                               );
-                              
-            },
-            child:
-             Column(
-               children: [
-                 Text(
-                  'Todo List\nFirestore DB\nCrud',
+           },
+                    child: Card(
+                      color: Colors.purpleAccent,
+                     elevation: 20,
+                child:
+                Container(
+                    padding:EdgeInsets.all(40),
+
+                    child:new Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:<Widget>[
+                          Center(child:Text("Firestore DB",style: TextStyle(fontSize:30,fontWeight:FontWeight.w900,color : Colors.white),)),
+
+                          Center(child:Text("TodoList Insert-Delete ",style: TextStyle(color: Colors.white, fontSize:22,fontWeight:FontWeight.w900))),
+
+                        ]
+                    )
+                )
             ),
-             SizedBox(height: 30),
-               ],
-             ),
-            style: TextButton.styleFrom(
-                primary: Colors.white,
-                backgroundColor: Colors.purpleAccent,
-                textStyle: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-          ),
-            
-      ],)
-    );
+         ),
+
+
+      ]
+        )
+      );
+    
   }
 }
